@@ -1,7 +1,6 @@
 
 import './App.css'
 import logosmall from './assets/logo-medium.png'
-import logo from './assets/logo-white.png'
 import {NavLink, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Overview from "./pages/Overview.jsx";
@@ -33,17 +32,17 @@ function App() {
                 </ul>
             </nav>
 
-        <div className="page-container">
-            {/*<img src={logo} alt="Company logo"/>*/}
-            {/*<h1>Begin hier met het maken van jouw blog-applicatie!</h1>*/}
-            <Routes>
-                <Route path={"/"} element={<Home/>}/>
-                <Route path={"/posts"} element={<Overview/>}/>
-                <Route path={"/posts/:id"} element={<DetailBlogpost/>}/>
-                <Route path={"/newpost"} element={<NewPost/>}/>
-                <Route path={"*"} element={<NotFound/>}/>
-            </Routes>
-        </div>
+            <div className="outer-container">
+                {/*<img src={logo} alt="Company logo"/>*/}
+                {/*<h1>Begin hier met het maken van jouw blog-applicatie!</h1>*/}
+                <Routes>
+                    <Route path={"/"} element={<Home/>}/>
+                    <Route path={"/posts"} element={<Overview/>}/>
+                    <Route path={"/posts/:id"} element={<DetailBlogpost/>}/>
+                    <Route path={"/newpost"} element={<NewPost/>}/>
+                    <Route path={"*"} element={<NotFound/>}/>
+                </Routes>
+            </div>
         </>
     )
 }
