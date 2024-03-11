@@ -11,7 +11,7 @@ const Overview = () => {
             <ul>
                 {posts.map(post => {
                     return <li key={post.id} className={"inner-container"}>
-                        <Link to={`/posts/${post.id.toString()}`} className={"default-nav-link link-title"}>{post.title}</Link>
+                        <Link to={`/posts/${post.id}`} className={"default-nav-link link-title"}>{post.title}</Link>
                         <p>({post.author})</p>
                         <p>{post.comments} reactie - {post.shares} keer gedeeld</p>
                     </li>

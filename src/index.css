@@ -22,6 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  background-color: var(--color-tertiary);
 }
 
 button, input, select, textarea {
@@ -55,7 +56,6 @@ p {
 }
 
 .outer-container {
-  background-color: var(--color-tertiary);
   padding: 0 20px;
   margin: 0 auto;
 
@@ -81,4 +81,39 @@ p {
   align-items: center;
   flex-wrap: wrap;
   gap: 0 10px
+}
+
+.form-container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-container > button {
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 1000px;
+  background-color: var(--color-primary);
+}
+
+.form-container > label {
+  margin: 0 auto;
+  width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container > label > input {
+  padding: 10px 10px;
+}
+
+.form-container > label > textarea {
+  padding: 10px 10px;
 }

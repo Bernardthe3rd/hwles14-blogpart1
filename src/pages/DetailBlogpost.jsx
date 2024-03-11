@@ -3,12 +3,11 @@ import posts from "../constants/data.json"
 
 const DetailBlogpost = () => {
     const { id} = useParams();
-    console.log(posts.title)
 
     return (
         <>
             <p>{id}</p>
-            <h1>{posts.title}</h1>
+            <h1>{posts[0].title}</h1>
         </>
     );
 };
