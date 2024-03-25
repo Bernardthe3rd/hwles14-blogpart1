@@ -1,16 +1,69 @@
-.page-container {
-    width: 100%;
-    height: 100vh;
-    color: white;
-    background: rgb(44,47,57);
-    /*Wil jij ook zo'n coole gradient maken? Deze is gemaakt via https://cssgradient.io/ - kind kan de was doen!*/
-    background: linear-gradient(37deg, rgba(44,47,57,1) 0%, rgba(0,0,0,1) 8%, rgba(80,83,92,1) 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/*.page-container {*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    color: white;*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*    padding: 0 20px;*/
+/*    background: rgb(44,47,57);*/
+/*    !*Wil jij ook zo'n coole gradient maken? Deze is gemaakt via https://cssgradient.io/ - kind kan de was doen!*!*/
+/*    background: linear-gradient(37deg, rgba(44,47,57,1) 0%, rgba(0,0,0,1) 8%, rgba(80,83,92,1) 100%);*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.page-container img {*/
+/*    width: 500px;*/
+/*}*/
+
+/*Starting styling Navigation*/
+.active-nav-link {
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.page-container img {
-    width: 500px;
+.default-nav-link {
+    color: var(--color-white);
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+/*logo nav*/
+.wrapper-img {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-img > img {
+    width: 100%;
+}
+
+/*navigation layout*/
+.nav-outer-container {
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 1200px;
+    background-color: var(--color-secondary);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-inner-container {
+    padding: 0 20px;
+    list-style-type: none;
+    width: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Ending styling Navigation*/

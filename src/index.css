@@ -22,16 +22,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  background-color: var(--color-tertiary);
 }
 
 button, input, select, textarea {
   font-family: inherit;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-block: 0.67em;
 }
 
 h1 {
@@ -54,4 +49,71 @@ h4 {
 
 p {
   margin-block: 0.5em;
+}
+
+.link-title {
+  color: var(--color-primary);
+}
+
+.outer-container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  /*border: 1px solid orange;*/
+  list-style-type: none;
+  background-color: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  color: var(--color-secondary);
+  padding: 0 20px;
+  margin: 20px auto;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 10px
+}
+
+.form-container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-container > button {
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 1000px;
+  background-color: var(--color-primary);
+}
+
+.form-container > label {
+  margin: 0 auto;
+  width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container > label > input {
+  padding: 10px 10px;
+}
+
+.form-container > label > textarea {
+  padding: 10px 10px;
 }
